@@ -84,3 +84,59 @@ body {
 .dropdown:hover a {
     color: #000;
 }
+
+/* hero section */
+.hero {
+    background-image: url('kampus.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 32.5rem; /* 1000px converted to rem (assuming root font-size is 16px) */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    padding-left: 20px; /* Padding to shift text slightly toward the center-left */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 300px; /* Additional padding for alignment */
+}
+
+.hero-content p {
+    margin: 0; /* Remove default paragraph margins */
+    padding-top: 1rem;
+}
+
+.text1{
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0; /* Remove margin between spans */
+}
+
+.text2 {
+    font-size: 1.5rem; /* Smaller text for the first line */
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content span:nth-child(2),
+.hero-content span:nth-child(3) {
+    line-height: 1; /* Set line-height to 1 for tighter spacing between these two spans */
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 50rem; /* Adjusting height for smaller screens */
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1.25rem;
+    }
+}
