@@ -251,7 +251,6 @@ body {
 /* important-dates */
 .important-dates {
     align-items: center;
-    justify-content: center;
     text-align: center;
     margin-bottom: 5rem;
     padding-bottom: 5rem;
@@ -263,8 +262,15 @@ body {
 }
 
 .important-dates .desc {
-    display: flex;
-    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+}
+.important-dates .desc h2{
+    font-weight: 500;
+}
+
+.important-dates .desc h2 span {
+    font-weight: 900;
 }
 @media screen and (max-width: 768px) {
     .hero {
