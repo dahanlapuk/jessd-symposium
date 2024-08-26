@@ -26,3 +26,8 @@ var countdown = setInterval(function() {
         document.querySelector('.countdown-text').style.display = 'none';
     }
 }, 1000);
+
+document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('navbar-menu').classList.toggle('active');
+});
+
